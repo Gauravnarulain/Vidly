@@ -1,2 +1,2 @@
 # Vidly
-ASP.NET MVC 5 - LEARNING ON UDEMY BY MOSH
+ASP.NET MVC 5 - Learning On Udemy and course instructor is Mosh Hamedani
