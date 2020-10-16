@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Vidly.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+@Html.ActionLink("Add New", "New", null, new { @class = "btn btn-default" })
+<h2>Customer List</h2>
+<hr/>
+<table class="table table-responsive table-bordered">
+    <thead>
+        <tr>
+            <th>SrNo</th>
+            <th>Customer</th>
+            <th>MemberShip Type</th>
+        </tr>
+    </thead>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@customer.Id</td>
+            <td>@customer.Name</td>
+            <td>@customer.MemeShip.Title</td>
+        </tr>
+    }
+</table>
+
