@@ -13,7 +13,7 @@ namespace Vidly.Models
         [StringLength(255)]
         [Display(Name = "Movie Title")]
         public string Title { get; set; }
-        [Display(Name = "Release Date")]
+        [Display(Name = "Movie Release Date")]
         public DateTime? ReleaseDate { get; set; }
         public Genre Genre { get; set; }
         [Required(ErrorMessage = "Please select movie category")]
